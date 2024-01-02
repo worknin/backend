@@ -1,4 +1,5 @@
 const express = require("express");
+// const swagger = require("./swagger");
 const app = express();
 
 const data = {
@@ -9,7 +10,8 @@ const data = {
 app.get("/", (req, res) => {
   res.send(data);
 });
+// swagger(app);
 
 app.listen(4000, () => {
-  console.log("worknin");
+  console.log("Server started on port 4000");
 });
