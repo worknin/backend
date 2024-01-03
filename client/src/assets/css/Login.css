@@ -1,0 +1,11 @@
+.containerLogin {
+  padding: 25px;
+  background-color: lightblue;
+}
+.containerLogin label {
+  font-size: 15px;
+}
+.containerLogin input {
+  display: inline-block;
+  box-sizing: border-box;
+}

@@ -1,0 +1,19 @@
+.nav {
+  background-color: aquamarine;
+  overflow: hidden;
+  padding: 10px;
+}
+.nav ul {
+  list-style-type: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+}
+.nav ul li {
+  padding: 0px 10px 0px 0px;
+}
+.nav img {
+  width: 30px;
+}

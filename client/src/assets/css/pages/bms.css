@@ -1,0 +1,32 @@
+/* @font-face {
+  src: local(knowledge-medium.woff.ttf) format('ttf');
+  font-family: 'knowledge-medium';
+} */
+.containers p4 {
+  font-family: 'knowledge-medium';
+  font-size: 30px;
+  font-weight: bold;
+}
+.containers p {
+  font-family: 'knowledge-medium';
+  font-size: 20px;
+}
+.containers p1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.containers #more {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .containers p4 {
+    font-size: 20px;
+  }
+  .containers p {
+    font-size: 10px;
+  }
+  .containers p1 {
+    font-size: 11px;
+  }
+}

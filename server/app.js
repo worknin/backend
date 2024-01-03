@@ -1,17 +1,11 @@
 const express = require("express");
-// const swagger = require("./swagger");
+const dotenv = require("dotenv").config();
 const app = express();
 
-const data = {
-  name: "worknin",
-  site: "job",
-};
+const port = process.env.PORT || 5000;
 
-app.get("/", (req, res) => {
-  res.send(data);
-});
-// swagger(app);
+app.use("/api/v1", require("./src/api/v1/routes/jobRouter"));
 
-app.listen(4000, () => {
-  console.log("Server started on port 4000");
+app.listen(port, () => {
+  console.log(`Server started on port ${port}`);
 });
